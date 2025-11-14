@@ -6,8 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		795A09CC2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */; };
+		795A0A092EC7940F00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		795A09BE2EC761E100D9BCA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		795A09DE2EC76A5700D9BCA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		795A09E92EC787EC00D9BCA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		795A09F42EC78ECB00D9BCA7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -20,12 +52,26 @@
 
 /* Begin PBXFileReference section */
 		795A09C02EC761E100D9BCA7 /* TRA_VideoRec_V1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TRA_VideoRec_V1; sourceTree = BUILT_PRODUCTS_DIR; };
+		795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		795A09E02EC76A5700D9BCA7 /* in */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = in; sourceTree = BUILT_PRODUCTS_DIR; };
+		795A09EB2EC787EC00D9BCA7 /* in_1sVideos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = in_1sVideos; sourceTree = BUILT_PRODUCTS_DIR; };
+		795A09F62EC78ECB00D9BCA7 /* V2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = V2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		795A09C22EC761E100D9BCA7 /* TRA_VideoRec_V1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TRA_VideoRec_V1;
+			sourceTree = "<group>";
+		};
+		795A09E12EC76A5700D9BCA7 /* in_coordinates */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = in_coordinates;
+			sourceTree = "<group>";
+		};
+		795A09EC2EC787EC00D9BCA7 /* in_1sVideos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = in_1sVideos;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795A09CC2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09DD2EC76A5700D9BCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09E82EC787EC00D9BCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09F32EC78ECB00D9BCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795A0A092EC7940F00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				795A09C22EC761E100D9BCA7 /* TRA_VideoRec_V1 */,
+				795A09E12EC76A5700D9BCA7 /* in_coordinates */,
+				795A09EC2EC787EC00D9BCA7 /* in_1sVideos */,
+				795A09CA2EC7622C00D9BCA7 /* Frameworks */,
 				795A09C12EC761E100D9BCA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,8 +125,19 @@
 			isa = PBXGroup;
 			children = (
 				795A09C02EC761E100D9BCA7 /* TRA_VideoRec_V1 */,
+				795A09E02EC76A5700D9BCA7 /* in */,
+				795A09EB2EC787EC00D9BCA7 /* in_1sVideos */,
+				795A09F62EC78ECB00D9BCA7 /* V2 */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		795A09CA2EC7622C00D9BCA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +165,69 @@
 			productReference = 795A09C02EC761E100D9BCA7 /* TRA_VideoRec_V1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		795A09DF2EC76A5700D9BCA7 /* in */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795A09E42EC76A5700D9BCA7 /* Build configuration list for PBXNativeTarget "in" */;
+			buildPhases = (
+				795A09DC2EC76A5700D9BCA7 /* Sources */,
+				795A09DD2EC76A5700D9BCA7 /* Frameworks */,
+				795A09DE2EC76A5700D9BCA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				795A09E12EC76A5700D9BCA7 /* in_coordinates */,
+			);
+			name = in;
+			packageProductDependencies = (
+			);
+			productName = in;
+			productReference = 795A09E02EC76A5700D9BCA7 /* in */;
+			productType = "com.apple.product-type.tool";
+		};
+		795A09EA2EC787EC00D9BCA7 /* in_1sVideos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795A09EF2EC787EC00D9BCA7 /* Build configuration list for PBXNativeTarget "in_1sVideos" */;
+			buildPhases = (
+				795A09E72EC787EC00D9BCA7 /* Sources */,
+				795A09E82EC787EC00D9BCA7 /* Frameworks */,
+				795A09E92EC787EC00D9BCA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				795A09EC2EC787EC00D9BCA7 /* in_1sVideos */,
+			);
+			name = in_1sVideos;
+			packageProductDependencies = (
+			);
+			productName = in_1sVideos;
+			productReference = 795A09EB2EC787EC00D9BCA7 /* in_1sVideos */;
+			productType = "com.apple.product-type.tool";
+		};
+		795A09F52EC78ECB00D9BCA7 /* V2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 795A09FA2EC78ECB00D9BCA7 /* Build configuration list for PBXNativeTarget "V2" */;
+			buildPhases = (
+				795A09F22EC78ECB00D9BCA7 /* Sources */,
+				795A09F32EC78ECB00D9BCA7 /* Frameworks */,
+				795A09F42EC78ECB00D9BCA7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V2;
+			packageProductDependencies = (
+			);
+			productName = V2;
+			productReference = 795A09F62EC78ECB00D9BCA7 /* V2 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +238,15 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					795A09BF2EC761E100D9BCA7 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					795A09DF2EC76A5700D9BCA7 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					795A09EA2EC787EC00D9BCA7 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					795A09F52EC78ECB00D9BCA7 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -111,12 +266,36 @@
 			projectRoot = "";
 			targets = (
 				795A09BF2EC761E100D9BCA7 /* TRA_VideoRec_V1 */,
+				795A09DF2EC76A5700D9BCA7 /* in */,
+				795A09EA2EC787EC00D9BCA7 /* in_1sVideos */,
+				795A09F52EC78ECB00D9BCA7 /* V2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
 		795A09BC2EC761E100D9BCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09DC2EC76A5700D9BCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09E72EC787EC00D9BCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		795A09F22EC78ECB00D9BCA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,11 +358,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/opt/homebrew/Cellar/sdl2/2.32.10/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+					/opt/homebrew/lib,
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "\"$(shell pkg-config --cflags sdl2)\"";
+				OTHER_LDFLAGS = (
+					"\"$(shell pkg-config --libs sdl2)\"",
+					"-lavformat",
+					"-lavcodec",
+					"-lavutil",
+					"-lswscale",
+					"-lswresample",
+					"-lavdevice",
+					"-lavfilter",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -235,10 +434,30 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/opt/homebrew/Cellar/sdl2/2.32.10/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+					/opt/homebrew/lib,
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "\"$(shell pkg-config --cflags sdl2)\"";
+				OTHER_LDFLAGS = (
+					"\"$(shell pkg-config --libs sdl2)\"",
+					"-lavformat",
+					"-lavcodec",
+					"-lavutil",
+					"-lswscale",
+					"-lswresample",
+					"-lavdevice",
+					"-lavfilter",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -248,7 +467,30 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG7E9KJ58F;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/opt/homebrew/Cellar/sdl2/2.32.10/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+				);
+				OTHER_CFLAGS = "\"$(shell pkg-config --cflags sdl2)\"";
+				OTHER_LDFLAGS = (
+					"\"$(shell pkg-config --libs sdl2)\"",
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lswscale",
+					"-lswresample",
+					"-lavdevice",
+					"-lavfilter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -258,7 +500,92 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					/opt/homebrew/Cellar/sdl2/2.32.10/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+				);
+				OTHER_CFLAGS = "\"$(shell pkg-config --cflags sdl2)\"";
+				OTHER_LDFLAGS = (
+					"\"$(shell pkg-config --libs sdl2)\"",
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lswscale",
+					"-lswresample",
+					"-lavdevice",
+					"-lavfilter",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		795A09E52EC76A5700D9BCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		795A09E62EC76A5700D9BCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		795A09F02EC787EC00D9BCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		795A09F12EC787EC00D9BCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		795A09FB2EC78ECB00D9BCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		795A09FC2EC78ECB00D9BCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PG7E9KJ58F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -280,6 +607,33 @@
 			buildConfigurations = (
 				795A09C82EC761E100D9BCA7 /* Debug */,
 				795A09C92EC761E100D9BCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795A09E42EC76A5700D9BCA7 /* Build configuration list for PBXNativeTarget "in" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795A09E52EC76A5700D9BCA7 /* Debug */,
+				795A09E62EC76A5700D9BCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795A09EF2EC787EC00D9BCA7 /* Build configuration list for PBXNativeTarget "in_1sVideos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795A09F02EC787EC00D9BCA7 /* Debug */,
+				795A09F12EC787EC00D9BCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		795A09FA2EC78ECB00D9BCA7 /* Build configuration list for PBXNativeTarget "V2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				795A09FB2EC78ECB00D9BCA7 /* Debug */,
+				795A09FC2EC78ECB00D9BCA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

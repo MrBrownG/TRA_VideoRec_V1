@@ -1,11 +1,15 @@
-#ifndef NETWORK_PROCESSER_H
-#define NETWORK_HANDLER_H processor
+//
+//  network_processor.h
+//  TRA_VideoRec_V1
+//
+//  Created by Brown Guo on 11/14/25.
+//
+#ifndef NETWORK_PROCESSOR_H
+#define NETWORK_PROCESSOR_H
 
-#include <pthread.h>
-#include "video_receiver.h"
+#include "common.h"
 
-// 函数声明
-void start_network_receivers(VideoStream streams[]);
-void stop_network_receivers(void);
+// 启动 4 路 UDP 接收线程
+void start_network_receivers();
 
 #endif
