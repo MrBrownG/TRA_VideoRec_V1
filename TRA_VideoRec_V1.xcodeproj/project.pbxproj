@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		795A09CC2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */; };
 		795A0A092EC7940F00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */; };
+		795A0A632EC7E19700D9BCA7 /* libavcodec.62.11.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 795A0A622EC7E19700D9BCA7 /* libavcodec.62.11.100.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,22 +57,13 @@
 		795A09E02EC76A5700D9BCA7 /* in */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = in; sourceTree = BUILT_PRODUCTS_DIR; };
 		795A09EB2EC787EC00D9BCA7 /* in_1sVideos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = in_1sVideos; sourceTree = BUILT_PRODUCTS_DIR; };
 		795A09F62EC78ECB00D9BCA7 /* V2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = V2; sourceTree = BUILT_PRODUCTS_DIR; };
+		795A0A622EC7E19700D9BCA7 /* libavcodec.62.11.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.62.11.100.dylib; path = ../../../../opt/homebrew/Cellar/ffmpeg/8.0_2/lib/libavcodec.62.11.100.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		795A09C22EC761E100D9BCA7 /* TRA_VideoRec_V1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TRA_VideoRec_V1;
-			sourceTree = "<group>";
-		};
-		795A09E12EC76A5700D9BCA7 /* in_coordinates */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = in_coordinates;
-			sourceTree = "<group>";
-		};
-		795A09EC2EC787EC00D9BCA7 /* in_1sVideos */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = in_1sVideos;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -81,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795A0A632EC7E19700D9BCA7 /* libavcodec.62.11.100.dylib in Frameworks */,
 				795A09CC2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,8 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				795A09C22EC761E100D9BCA7 /* TRA_VideoRec_V1 */,
-				795A09E12EC76A5700D9BCA7 /* in_coordinates */,
-				795A09EC2EC787EC00D9BCA7 /* in_1sVideos */,
 				795A09CA2EC7622C00D9BCA7 /* Frameworks */,
 				795A09C12EC761E100D9BCA7 /* Products */,
 			);
@@ -135,6 +126,7 @@
 		795A09CA2EC7622C00D9BCA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				795A0A622EC7E19700D9BCA7 /* libavcodec.62.11.100.dylib */,
 				795A09CB2EC7622C00D9BCA7 /* libSDL2-2.0.0.dylib */,
 			);
 			name = Frameworks;
@@ -177,9 +169,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				795A09E12EC76A5700D9BCA7 /* in_coordinates */,
-			);
 			name = in;
 			packageProductDependencies = (
 			);
@@ -198,9 +187,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				795A09EC2EC787EC00D9BCA7 /* in_1sVideos */,
 			);
 			name = in_1sVideos;
 			packageProductDependencies = (
@@ -475,6 +461,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+					/opt/homebrew/Cellar/ffmpeg/8.0_2/lib,
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -508,6 +495,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/sdl2/2.32.10/lib,
+					/opt/homebrew/Cellar/ffmpeg/8.0_2/lib,
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
