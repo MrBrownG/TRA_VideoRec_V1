@@ -9,8 +9,8 @@
 
 #include "common.h"
 
-void init_sdl();
-void sdl_display_frame();
-void destroy_sdl();
+int init_sdl(void);
+void sdl_display_frame(void);
+void destroy_sdl(void);
 
 #endif

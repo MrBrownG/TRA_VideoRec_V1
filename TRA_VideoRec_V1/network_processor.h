@@ -10,6 +10,6 @@
 #include "common.h"
 
 // 启动 4 路 UDP 接收线程
-void start_network_receivers();
-
+void start_network_receivers(void);
+void stop_network_receivers(void);
 #endif
